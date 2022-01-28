@@ -14,4 +14,9 @@ class HomeController extends Controller
 
         return view('pages.home', compact('comics'));
     }
+
+    public function show() {
+
+        return view('pages.detail');
+    }
 }
