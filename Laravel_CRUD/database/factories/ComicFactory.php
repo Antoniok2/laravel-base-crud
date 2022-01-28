@@ -8,10 +8,10 @@ use Faker\Generator as Faker;
 $factory->define(Comic::class, function (Faker $faker) {
     return [
 
-        'title' => $faker -> word(),
+        'title' => $faker -> name(),
         'author' => $faker -> name(),
         'release_date' => $faker -> date(),
-        'count' => $faker -> numberBetween(0, 500),
+        'count' => $faker -> numberBetween(50, 500),
 
     ];
 });
