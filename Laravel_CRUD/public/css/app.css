@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b3ff00;
+  color: black;
+  text-align: center;
+}
+
+header {
+  background-color: royalblue;
+  color: white;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: royalblue;
+  color: white;
+  margin-top: 50px;
+}
+
