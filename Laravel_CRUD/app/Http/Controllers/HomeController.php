@@ -21,4 +21,23 @@ class HomeController extends Controller
 
         return view('pages.detail', compact('comic'));
     }
+
+    public function create() {
+
+        return view('pages.create');
+    }
+
+    public function store(Request $request) {
+        $data = $request -> validate([
+            'title' => 'required|string|max:255',
+            'author' =>  'required|string|max:255',
+            'release_date' => 'required|date',
+            'count' => 'required|Numeric'
+        ]);
+
+        $comic = Comic::create($data);
+
+        return redirect() -> route('home');
+
+    }
 }
