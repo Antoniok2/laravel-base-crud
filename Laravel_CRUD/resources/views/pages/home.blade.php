@@ -13,6 +13,7 @@
                 <a href="{{ route('detail', $comic -> id) }}">
                     {{ $comic -> title }}
                 </a>
+                <a href="{{ route('edit', $comic -> id) }}">EDIT</a>
             </li>
             
         @endforeach
